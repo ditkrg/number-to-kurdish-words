@@ -19,9 +19,10 @@ Or install it yourself as:
     $ gem install numbers_to_kurdish_words
 
 ## Usage
-
-TODO: Write usage instructions here
-
+```ruby
+1250.to_words # => هەزار و دوو سەد و پەنجا
+100200.to_words # => سەد هەزار و دو سەد
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -39,4 +40,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the NumbersToKurdishWords project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/numbers_to_kurdish_words/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the NumbersToKurdishWords project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/ditdevtools/number-to-kurdish-words/blob/master/CODE_OF_CONDUCT.md).
