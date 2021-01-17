@@ -2,6 +2,8 @@
 
 This gem is a Ruby implementation of the NPM package https://github.com/Mawlood-Fareq/kurdish-number-towords/
 
+The algorithm was already developed by the author of the NPM package.
+
 ## Installation
 
 Add this line to your application's Gemfile:
