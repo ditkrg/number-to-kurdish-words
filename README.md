@@ -23,7 +23,7 @@ Or install it yourself as:
 ## Usage
 ```ruby
 1250.to_words # => هەزار و دوو سەد و پەنجا
-100200.to_words # => سەد هەزار و دو سەد
+100200.to_words # => سەد هەزار و دوو سەد
 ```
 ## Development
 
