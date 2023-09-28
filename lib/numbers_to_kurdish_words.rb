@@ -13,7 +13,7 @@ module NumbersToKurdishWords
 
     return "" if number === nil
 
-    if number < 0 
+    if number < 0
       number = number * -1;
       return "سالب " + number.to_words
     end
@@ -21,7 +21,7 @@ module NumbersToKurdishWords
     if  number === 0
       if level === 0
         return "سفر";
-      else 
+      else
         return "";
       end
     end
@@ -31,21 +31,21 @@ module NumbersToKurdishWords
       level -= 1;
     end
 
-    if number < 10 
+    if number < 10
       result += ones[number - 1];
-    elsif (number < 20) 
+    elsif (number < 20)
       result += ten[number - 10];
-    elsif (number < 100) 
+    elsif (number < 100)
       result += tens[(number / 10).floor - 2] + to_words(number % 10, level + 1);
-    elsif (number < 1000) 
+    elsif (number < 1000)
       result += hundreds[(number / 100).floor - 1] + to_words(number % 100, level + 1);
-    elsif (number < 1000000) 
+    elsif (number < 1000000)
       result += (number / 1000 < 2 ? '' : to_words((number / 1000).floor, level)) + " هەزار" + to_words(number % 1000, level + 1);
-    elsif (number < 1000000000) 
+    elsif (number < 1000000000)
       result += to_words((number / 1000000).floor, level) + " ملیۆن" + to_words(number % 1000000, level + 1);
-    elsif (number < 1000000000000) 
-      result += to_words((number / 1000000000).floor, level) + " ملیارد" + to_words(number % 1000000000, level + 1);
-    elsif (number < 1000000000000000) 
+    elsif (number < 1000000000000)
+      result += to_words((number / 1000000000).floor, level) + " ملیار" + to_words(number % 1000000000, level + 1);
+    elsif (number < 1000000000000000)
       result += to_words((number / 1000000000000).floor, level) + " ترلیۆن" + to_words(number % 1000000000000, level + 1);
     end
 
